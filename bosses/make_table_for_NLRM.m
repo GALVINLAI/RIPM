@@ -1,17 +1,16 @@
 
-%%为了实验NLRM的制表脚本,私用不公开.
 
 %%
 n_repeat = 20; %%%%%%%%%%%%%
 tolKKTres = 1e-8; %%%%%%%%%%%%%
 
-%% [手动确认顺序] 提前切换当前文件夹; 更具问题不同要调参
+%% 
 List = dir('RC_fixedrank_NLRM_nrep20*');
 RC_filename_list = {List.name}'; 
 new_RC_filename_list = RC_filename_list(end-2:end);
 new_RC_filename_list(4:9) = RC_filename_list(1:6);
 
-%% 制表TotalTable是结果
+%% TotalTable
 Table = [];
 subTable = [];
 for k = 1: numel(new_RC_filename_list)
