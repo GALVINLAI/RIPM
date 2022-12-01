@@ -2,15 +2,8 @@ function  [x, xcost, all_info, outer_info, Success]=Rie_Barrier_simple(a,mu,x)
 
 % Barrier Methods on Riemannian Optimization for a simple problem.
 % For now, this method is tested only for inqualities constrains.
-% \min _{x \in \mathbb{S}^{n-1}} a^{T}x s.t. x \geqslant 0.
-% See 'Note_Riemannian IP_2021_11_21.pdf'
-
-% 我们能使用任意的子方法求解障碍函数
-% 初期点必须严格满足不等式条件且是M上的点
-% 暂无理论上的收敛保障
-
-% 出现的问题：使用manopt求解障碍函数，但障碍函数虽无约束，但其定义域不是M全体。
-% 有时候manopt会迭代到定义域外，出现错误。这种情况比较受初始点影响。
+% min _{x \in \mathbb{S}^{n-1}} a^{T}x s.t. x >= 0.
+% See Section 7.1 An Intuitive Barrier Method on Manifolds
 
 % If no input is provided, generate random data for a quick demo
 if nargin == 0
