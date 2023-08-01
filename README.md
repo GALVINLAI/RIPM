@@ -1,6 +1,6 @@
-# RIPM
+# Riemannian Interior Point Methods (RIPM)
 
-**Riemannian Interior Point Methods (RIPM)** for Constrained Optimization on Manifolds
+Riemannian Interior Point Methods (RIPM) for Constrained Optimization on Manifolds
 
 This is a *primal-dual interior point methods* solver for nonlinear
 optimization problems on Riemannian manifolds, which aims to minimize the
