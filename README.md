@@ -15,8 +15,8 @@ Z. Lai and A. Yoshise.
 An earlier version of this article has been circulated under the title
 "Superlinear and Quadratic Convergence of Riemannian Interior Point Methods".
 
-In addition, we have a separate document with detailed instructions for
-the implementation. The documentation is available on github.
+**In addition, we have a separate document with detailed instructions for the implementation. 
+The documentation is available on github.**
 
 The code is based on matalb solver 'Manopt'.\
 Before running the codes, you must install the solver ['Manopt'](https://www.manopt.org/tutorial.html)!
