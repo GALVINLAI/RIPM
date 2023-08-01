@@ -5,10 +5,11 @@
 This is a *primal-dual interior point methods* solver for nonlinear
 optimization problems on Riemannian manifolds, which aims to minimize the
 cost function in the given problem structure with (in)equality constraints：
+
 $$
 \begin{array}{cl}
 \min _{x \in \mathbb{M}} & f(x) \\
-\text { s.t. } & h(x)=0, \text { and } g(x) \leqslant 0.
+\text { s.t. } & h(x)=0, \text { and } g(x) \leq 0.
 \end{array}
 $$
 
