@@ -15,8 +15,7 @@ $$
 For a description of the algorithm and theorems offering convergence guarantees, see the references:\
 Z. Lai and A. Yoshise. *Riemannian Interior Point Methods for Constrained Optimization on Manifolds.* [[arXiv]](https://arxiv.org/abs/2203.09762)
 
-**In addition, we have a additional document [Implement Note of Global RIPM.pdf] with detailed instructions for the implementation. 
-The documentation is available on github.**
+**We prepared a additional document [Implement Note of Global RIPM](Implement_Note_of_Global_RIPM.pdf) with detailed instructions for the implementation.**
 
 The code is based on matalb solver 'Manopt'.\
 Before running the codes, you must install the solver ['Manopt'](https://www.manopt.org/tutorial.html)!
