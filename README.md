@@ -18,5 +18,8 @@ Z. Lai and A. Yoshise. *Riemannian Interior Point Methods for Constrained Optimi
 
 **We prepared a additional document [Implement Note of Global RIPM](Implement_Note_of_Global_RIPM.pdf) with detailed instructions for the implementation.**
 
+**[New!] We upload a [new toturial](NewNoteOfRIPM.pdf)**
+
+
 The code is based on matalb solver 'Manopt'.\
 Before running the codes, you must install the solver ['Manopt'](https://www.manopt.org/tutorial.html)!
