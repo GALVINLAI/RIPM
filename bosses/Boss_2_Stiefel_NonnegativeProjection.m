@@ -10,13 +10,13 @@ specifier.matlabversion = 1; % 0 if older than 2015 1 otherwise
 specifier.ind = [1,1,1,1,1];  % [1,1,1,1,1]
 
 % size of problem
-rdimset = [40 50 60 70]; %%%%%%%%%%%%% [40 50 60 70]
+rdimset = [20]; %%%%%%%%%%%%% [40 50 60 70]
 
 % KKT residual
 tolKKTrespowerset = [6]; %%%%%%%%%%%%%% log10 scale, i.e., 1e-* tolerance
 
 % Number of repeat on same set of data
-n_repeat = 20;  %%%%%%%%%%%%%% 20;
+n_repeat = 1;  %%%%%%%%%%%%%% 20;
 
 maxtime = 600; %%%%%%%%%%%%%
 
@@ -74,7 +74,7 @@ for n = rdimset
 
             setting.ExperimentName = mfilename();
             setting.SimpleName = setting.ExperimentName(8:end);
-            setting.filepath = sprintf('./numerical results/Mod_St/nrep%d_Row%d_Col%d_KKTtol%.1e',...
+            setting.filepath = sprintf('nrep%d_Row%d_Col%d_KKTtol%.1e',...
                 setting.repeat,setting.row_dim,setting.col_dim,setting.tolKKTres);
 
             result = client_Stiefel_NonnegativeProjection(n, k, Xstar, C, options, specifier, setting);
