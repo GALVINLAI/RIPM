@@ -10,16 +10,16 @@ specifier.matlabversion = 1; % 0 if older than 2015 1 otherwise
 specifier.ind = [1,1,1,1,1];  % [1,1,1,1,1]
 
 % sd is standard deviation for Gaussian Noise.
-sdset = [0, 0.001, 0.01]; %%%%%%%%%%%%% [0, 0.001, 0.01]
+sdset = [0, 0.001]; %%%%%%%%%%%%% [0, 0.001, 0.01]
 
 % size of problem
-rdimset = [20, 30, 40]; %%%%%%%%%%%%% [20, 30, 40]
+rdimset = [10]; %%%%%%%%%%%%% [20, 30, 40]
 
 % KKT residual
 tolKKTrespowerset = [8]; %%%%%%%%%%%%%% log10 scale, i.e., 1e-* tolerance
 
 % Number of repeat on same set of data
-n_repeat = 20;  %%%%%%%%%%%%% 20;
+n_repeat = 2;  %%%%%%%%%%%%% 20;
 
 maxtime = 180; %%%%%%%%%%%%%
 
@@ -28,7 +28,7 @@ AllResultBox = zeros(20, n_repeat+1);
 for sd = sdset
     for rdim = rdimset
         cdim = 0.8*rdim; % Automatically decided.
-        rankval = max(2, round(0.1*rdim)); % Automatically decided.
+        rankval = 0.1*rdim; % Automatically decided.
         % For rdim in [20, 30, 40], then
         %     cdim in [16, 24, 32],
         %  rankval in [ 2,  3,  4].
@@ -98,12 +98,12 @@ for sd = sdset
             end
 
             AllResult = Statistics(AllResult); % Add a column of statistics to the last column for repeats.
-            filename = sprintf('RC_%s_%s.csv',setting.SimpleName,setting.filepath);
+            filename = sprintf('./numerical results/NLRM/RC_%s_%s.csv',setting.SimpleName,setting.filepath);
             writematrix(AllResult,filename)
 
             table = reshape(AllResult(:,end),[4,5]);
             table = table'; % data(:,i) = [residual; time; iternum; NLRMrelres];
-            filename = sprintf('Table_%s_%s.csv',setting.SimpleName,setting.filepath);
+            filename = sprintf('./numerical results/NLRM/Table_%s_%s.csv',setting.SimpleName,setting.filepath);
             writematrix(table,filename)
 
         end

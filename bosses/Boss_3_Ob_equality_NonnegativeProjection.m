@@ -80,7 +80,7 @@ for n = rdimset
 
             setting.ExperimentName = mfilename();
             setting.SimpleName = setting.ExperimentName(8:end);
-            setting.filepath = sprintf('nrep%d_Row%d_Col%d_KKTtol%.1e',...
+            setting.filepath = sprintf('./numerical results/Mod_Ob/nrep%d_Row%d_Col%d_KKTtol%.1e',...
                 setting.repeat,setting.row_dim,setting.col_dim,setting.tolKKTres);
 
             result = client_Ob_equality_NonnegativeProjection(n, k, V, Xstar, C, options, specifier, setting);
@@ -90,12 +90,12 @@ for n = rdimset
         end
 
         AllResult = Statistics(AllResult); % Add a column of statistics to the last column for repeats.
-        filename = sprintf('RC_%s_%s.csv',setting.SimpleName,setting.filepath);
+        filename = sprintf('./numerical results/Mod_Ob/RC_%s_%s.csv',setting.SimpleName,setting.filepath);
         writematrix(AllResult,filename)
 
         table = reshape(AllResult(:,end),[4,6]);
         table = table'; % data(:,i) = [residual; time; iternum; NLRMrelres];
-        filename = sprintf('Table_%s_%s.csv',setting.SimpleName,setting.filepath);
+        filename = sprintf('./numerical results/Mod_Ob/Table_%s_%s.csv',setting.SimpleName,setting.filepath);
         writematrix(table,filename)
 
     end
