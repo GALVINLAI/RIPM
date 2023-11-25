@@ -19,7 +19,7 @@ rdimset = [10]; %%%%%%%%%%%%% [20, 30, 40]
 tolKKTrespowerset = [8]; %%%%%%%%%%%%%% log10 scale, i.e., 1e-* tolerance
 
 % Number of repeat on same set of data
-n_repeat = 2;  %%%%%%%%%%%%% 20;
+n_repeat = 5;  %%%%%%%%%%%%% 20;
 
 maxtime = 180; %%%%%%%%%%%%%
 
