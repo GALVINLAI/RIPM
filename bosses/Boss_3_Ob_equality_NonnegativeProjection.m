@@ -12,13 +12,13 @@ specifier.matlabversion = 1; % 0 if older than 2015 1 otherwise
 specifier.ind = [1,1,1,1,1,1];  % [1,1,1,1,1,1]
 
 % size of problem
-rdimset = [40]; %%%%%%%%%%%%% [40 50 60 70]
+rdimset = [40 50 60 70]; %%%%%%%%%%%%% [40 50 60 70]
 
 % KKT residual
 tolKKTrespowerset = [6]; %%%%%%%%%%%%%% log10 scale, i.e., 1e-* tolerance
 
 % Number of repeat on same set of data
-n_repeat = 1;  %%%%%%%%%%%%%% 20;
+n_repeat = 20;  %%%%%%%%%%%%%% 20;
 
 maxtime = 600; %%%%%%%%%%%%%
 

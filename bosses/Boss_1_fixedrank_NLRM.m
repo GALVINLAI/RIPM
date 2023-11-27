@@ -10,16 +10,16 @@ specifier.matlabversion = 1; % 0 if older than 2015 1 otherwise
 specifier.ind = [1,1,1,1,1];  % [1,1,1,1,1]
 
 % sd is standard deviation for Gaussian Noise.
-sdset = [0, 0.001]; %%%%%%%%%%%%% [0, 0.001, 0.01]
+sdset = [0, 0.001, 0.01]; %%%%%%%%%%%%% [0, 0.001, 0.01]
 
 % size of problem
-rdimset = [10]; %%%%%%%%%%%%% [20, 30, 40]
+rdimset = [20, 30, 40]; %%%%%%%%%%%%% [20, 30, 40]
 
 % KKT residual
 tolKKTrespowerset = [8]; %%%%%%%%%%%%%% log10 scale, i.e., 1e-* tolerance
 
 % Number of repeat on same set of data
-n_repeat = 1;  %%%%%%%%%%%%% 20;
+n_repeat = 20;  %%%%%%%%%%%%% 20;
 
 maxtime = 180; %%%%%%%%%%%%%
 
