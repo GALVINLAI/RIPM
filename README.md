@@ -18,7 +18,7 @@ Z. Lai and A. Yoshise. *Riemannian Interior Point Methods for Constrained Optimi
 
 **We prepared a additional document [Implement Note of Global RIPM](Implement_Note_of_Global_RIPM.pdf) with detailed instructions for the implementation.**
 
-**[New!] We upload a [new tutorial](NewNoteOfRIPM.html) for quick start.**
+**[New!] We upload a new [tutorial](tutorial.pdf) for quick start.**
 
 
 
