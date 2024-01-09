@@ -8,7 +8,7 @@
 
 - [test_ProductManifold.m](test_ProductManifold.m) (P1) Equality constraints.
 
-- [Notes 17th September 2023 17_37_34.pdf](Notes 17th September 2023 17_37_34.pdf) Records examples in P1 and P2 forms.
+- [Notes_17th_September_2023.pdf](Notes_17th_September_2023.pdf) Records examples in P1 and P2 forms.
 
 ## modified_supporting_functions
 
