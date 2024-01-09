@@ -2,7 +2,7 @@
 
 - [RIPM_ProductManifold.m](RIPM_ProductManifold.m)
 
-  Modified version of RIPM that works for product manifolds composed of two components, the original RIPM.m cannot handle it.
+  Modified version of RIPM that works for product manifolds composed of two components, the original RIPM.m cannot handle it. **It is still under development.**
 
 - [test_OnlyIneq_RIPM_ProductManifold.m](test_OnlyIneq_RIPM_ProductManifold.m) (P2) Only inequality constraints.
 
