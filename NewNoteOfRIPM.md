@@ -25,7 +25,6 @@ overview:
 - As a interior point method, the **inequality constraints are necessary**. If your problem is not constrained by inequalities, try other methods such as a Riemannian augmented Lagrangian method. See [more](https://link.springer.com/article/10.1007/s00245-019-09564-3).
 - **Equality constraints are optional. But there should never be redundant.** In fact we want the Riemannian gradients of all equality constraints to be linearly independent, otherwise Newton's equations may be singular.
 - We prepared a additional document [Implement Note of Global RIPM](https://github.com/GALVINLAI/RIPM/blob/main/Implement_Note_of_Global_RIPM.pdf) with detailed instructions for the implementation.
-- 
 
 # Usage of Solver `RIPM.m`
 
