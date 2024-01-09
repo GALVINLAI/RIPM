@@ -1,6 +1,6 @@
 function val = ProdInner(M, x, s1, s2)
-% 特别注意: 默认Euc_eq x Euc_ineq x Euc_ineq 装配的是普通内积,
-% 但是如果Euc_eq = Skew space, 普通内积或可能影响对称性.
+% Please note: By default, Euc_eq x Euc_ineq x Euc_ineq is assembled using the regular inner product,
+% but if Euc_eq = Skew space, the regular inner product may affect symmetry.
 
 % Inner product for product tangent space of
 % M x Euc_eq x Euc_ineq x Euc_ineq 
